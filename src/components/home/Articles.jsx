@@ -17,7 +17,7 @@ const Articles = () => {
       category: "Organic Farming",
       date: "Jan 10, 2026",
       author: "Agri-Expert",
-      img: "https://images.unsplash.com/photo-1592841608241-94943960098a?q=80&w=600",
+      img: "https://static0.backyardbossimages.com/wordpress/wp-content/uploads/2023/06/shutterstock_2176822265.jpg?q=50&fit=crop&w=1600&h=900&dpr=1.5",
       desc: "Learn the secrets of using compost and bio-fertilizers for a massive tomato harvest.",
       content: "Organic fertilizers like neem cake, vermicompost, and liquid seaweed are essential for tomato growth. They not only provide nitrogen but also improve soil texture. Proper mulching and consistent watering are the keys to double your yield without using chemicals."
     },
@@ -27,7 +27,7 @@ const Articles = () => {
       category: "Crop Protection",
       date: "Feb 15, 2026",
       author: "Dr. Sharma",
-      img: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=600",
+      img: "https://cdn.shopify.com/s/files/1/0673/1697/3862/files/New_Project_-_2025-03-13T181634.395.jpg?v=1741870006",
       desc: "Detailed guide on managing fruit flies and hopper attacks during rainy seasons.",
       content: "High humidity in the monsoon attracts fruit flies. Use pheromone traps to capture them effectively. Also, light pruning of the mango tree helps in better aeration, reducing fungal growth. Apply organic sprays before the rains peak for best protection."
     },
@@ -37,7 +37,7 @@ const Articles = () => {
       category: "Smart Tech",
       date: "Mar 05, 2026",
       author: "Tech-Agri",
-      img: "https://images.unsplash.com/photo-1563514223351-bf4b7696205d?q=80&w=600",
+      img: "https://www.mdpi.com/water/water-15-01802/article_deploy/html/images/water-15-01802-g002.png",
       desc: "Implementing drip systems and soil sensors for sustainable rice production.",
       content: "Rice traditionally requires huge water quantities. However, Alternate Wetting and Drying (AWD) technology combined with soil moisture sensors can save up to 40% water. This method also reduces methane emissions and increases root strength."
     },

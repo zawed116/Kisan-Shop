@@ -9,16 +9,16 @@ const GrowthPromoters = () => {
 
   // Real Growth Promoter Products with High-Quality Images
   const promoterProducts = [
-    { id: 401, name: "Seaweed Liquid Fertilizer", price: 450, originalPrice: 580, image: "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?q=80&w=400&fit=crop", tag: "Organic", rating: 4.8 },
-    { id: 402, name: "Gibberellic Acid 0.001%L", price: 320, originalPrice: 400, image: "https://images.unsplash.com/photo-1592919016383-407b5871216e?q=80&w=400&fit=crop", tag: "Hormone", rating: 4.7 },
-    { id: 403, name: "Humic Acid + Fulvic Acid", price: 890, originalPrice: 1100, image: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?q=80&w=400&fit=crop", tag: "Root Booster", rating: 4.9 },
+    { id: 401, name: "Seaweed Liquid Fertilizer", price: 450, originalPrice: 580, image: "https://agribegri.com/_next/image?url=https%3A%2F%2Fdujjhct8zer0r.cloudfront.net%2Fmedia%2Fprod_image%2F18202070571750825792.webp&w=750&q=90", tag: "Organic", rating: 4.8 },
+    { id: 402, name: "Gibberellic Acid 0.001%L", price: 320, originalPrice: 400, image: "https://agriplexindia.com/cdn/shop/files/ProGibb-Easy.jpg?crop=center&height=940&v=1743241797&width=940", tag: "Hormone", rating: 4.7 },
+    { id: 403, name: "Humic Acid + Fulvic Acid", price: 890, originalPrice: 1100, image: "https://napnutriscience.com/wp-content/uploads/2021/04/1-1.png", tag: "Root Booster", rating: 4.9 },
     { id: 404, name: "Amino Acid Micronutrient", price: 550, originalPrice: 700, image: "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=400&fit=crop", tag: "Foliar Spray", rating: 4.6 },
     { id: 405, name: "Cytokinin Plant Growth", price: 1200, originalPrice: 1550, image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=400&fit=crop", tag: "Flower Booster", rating: 4.8 },
     // Extra products that show on click
     { id: 406, name: "Triacontanol EW 0.1%", price: 280, originalPrice: 350, image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=400&fit=crop", tag: "Growth Regulator", rating: 4.5 },
     { id: 407, name: "Bio-Potash Booster", price: 600, originalPrice: 750, image: "https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?q=80&w=400&fit=crop", tag: "Fruit Size", rating: 4.7 },
-    { id: 408, name: "Ethephon 39% SL", price: 420, originalPrice: 500, image: "https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=400&fit=crop", tag: "Ripener", rating: 4.6 },
-    { id: 409, name: "Calcium Boron Liquid", price: 750, originalPrice: 900, image: "https://images.unsplash.com/photo-1563514223351-bf4b7696205d?q=80&w=400&fit=crop", tag: "Immunity", rating: 4.9 },
+    { id: 408, name: "Ethephon 39% SL", price: 420, originalPrice: 500, image: "https://agribegri.com/_next/image?url=https%3A%2F%2Fdujjhct8zer0r.cloudfront.net%2Fmedia%2Fprod_image%2F0cb87d807ac73f58631a3f71376ec91f-11-03-25-09-46-48.webp&w=750&q=75", tag: "Ripener", rating: 4.6 },
+    { id: 409, name: "Calcium Boron Liquid", price: 750, originalPrice: 900, image: "https://cpimg.tistatic.com/12034197/b/4/calcium-boron-liquid..webp", tag: "Immunity", rating: 4.9 },
     { id: 410, name: "Nitrobenzene 20% Spray", price: 380, originalPrice: 480, image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=400&fit=crop", tag: "Flowering", rating: 4.4 },
   ];
 
@@ -95,20 +95,6 @@ const GrowthPromoters = () => {
               <p className="text-gray-500 text-sm">Helps plants absorb more fertilizers from the soil efficiently.</p>
           </div>
       </div>
-
-      {/* SPECIAL CALL TO ACTION */}
-      {/* <div className="mt-16 bg-emerald-950 rounded-[3rem] p-8 md:p-12 relative overflow-hidden"> */}
-          {/* <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/20 rounded-full blur-[100px]"></div> */}
-          {/* <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8"> */}
-              {/* <div> */}
-                  {/* <h3 className="text-white text-3xl font-black mb-2">Confused about Dosage?</h3> */}
-                  {/* <p className="text-emerald-200/70 font-medium">Download our free "Dosage Calculator" and never over-use chemicals again.</p> */}
-              {/* </div> */}
-              {/* <button className="bg-white text-emerald-950 px-10 py-4 rounded-2xl font-black hover:bg-emerald-400 hover:text-white transition-all shadow-2xl">
-                  Download App
-              </button> */}
-          {/* </div> */}
-      {/* </div> */}
 
     </div>
   );

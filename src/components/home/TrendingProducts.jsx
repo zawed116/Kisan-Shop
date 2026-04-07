@@ -5,16 +5,87 @@ const TrendingProducts = () => {
   const [showAll, setShowAll] = useState(false);
 
   const allTrendingProducts = [
-    { id: 101, name: "Syngenta Isabion Tonic", price: 850, image: "https://cdn.pixabay.com/photo/2016/11/29/05/04/agriculture-1867458_1280.jpg", category: "Growth Promoters", badge: "Trending" },
-    { id: 102, name: "Premium Onion Seeds", price: 340, image: "https://cdn.pixabay.com/photo/2020/03/31/13/46/onion-4987679_1280.jpg", category: "Seeds", badge: "Hot" },
-    { id: 103, name: "NPK 19:19:19 Soluble", price: 180, image: "https://cdn.pixabay.com/photo/2017/07/31/04/11/tomato-2556426_1280.jpg", category: "Fertilizer", badge: "Bulk Deal" },
-    { id: 104, name: "Electric Sprayer Pump", price: 3200, image: "https://cdn.pixabay.com/photo/2021/08/29/07/31/sprayer-6582570_1280.jpg", category: "Equipment", badge: "Best Seller" },
-    { id: 105, name: "Organic Bio-Pesticide", price: 450, image: "https://cdn.pixabay.com/photo/2015/05/26/17/51/pesticide-785133_1280.jpg", category: "Protection", badge: "Eco-Safe" },
-    { id: 106, name: "Bayer Nativo Fungicide", price: 1200, image: "https://cdn.pixabay.com/photo/2016/11/18/16/04/corn-1835532_1280.jpg", category: "Protection", badge: "" },
-    { id: 107, name: "Multiplex Micro Nutrients", price: 560, image: "https://cdn.pixabay.com/photo/2016/08/01/17/08/tomatoes-1561565_1280.jpg", category: "Nutrients", badge: "" },
-    { id: 108, name: "UPL Saaf Fungicide", price: 280, image: "https://cdn.pixabay.com/photo/2017/10/10/11/49/vegetables-2836852_1280.jpg", category: "Protection", badge: "" },
-    { id: 109, name: "Kitchen Garden Kit", price: 899, image: "https://cdn.pixabay.com/photo/2017/03/13/11/35/seedlings-2139413_1280.jpg", category: "Home Garden", badge: "New" },
-    { id: 110, name: "Zinc EDTA 12%", price: 420, image: "https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_1280.jpg", category: "Nutrients", badge: "" }
+    { 
+      id: 101, 
+      name: "Syngenta Isabion Tonic", 
+      price: 850, 
+      // Naya working link jo agriculture tonic ko properly represent karta hai
+      image: "https://www.syngenta.co.in/sites/g/files/kgtney376/files/styles/syngenta_half_width_auto/public/media/image/2022/04/26/new_isabion_increased_width_lesser_height_croppped_r.jpg?itok=Y8U5lLb0", 
+      category: "Growth Promoters", 
+      badge: "Trending" 
+    },
+    { 
+      id: 102, 
+      name: "Premium Onion Seeds", 
+      price: 340, 
+      image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=600&auto=format&fit=crop", 
+      category: "Seeds", 
+      badge: "Hot" 
+    },
+    { 
+      id: 103, 
+      name: "NPK 19:19:19 Soluble", 
+      price: 180, 
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=600&auto=format&fit=crop", 
+      category: "Fertilizer", 
+      badge: "Bulk Deal" 
+    },
+    { 
+      id: 104, 
+      name: "Electric Sprayer Pump", 
+      price: 3200, 
+      image: "https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=600&auto=format&fit=crop", 
+      category: "Equipment", 
+      badge: "Best Seller" 
+    },
+    { 
+      id: 105, 
+      name: "Organic Bio-Pesticide", 
+      price: 450, 
+      image: "https://infinitylearn.com/surge/wp-content/uploads/2024/06/Biopesticides-copy.jpg", 
+      category: "Protection", 
+      badge: "Eco-Safe" 
+    },
+    { 
+      id: 106, 
+      name: "Bayer Nativo Fungicide", 
+      price: 1200, 
+      image: "https://e2vctdhnq76.exactdn.com/wp-content/uploads/2025/05/nativo-fungicide-1080x703.png?strip=all&lossy=1&ssl=1", 
+      category: "Protection", 
+      badge: "" 
+    },
+    { 
+      id: 107, 
+      name: "Multiplex Micro Nutrients", 
+      price: 560, 
+      image: "https://5.imimg.com/data5/ECOM/Default/2023/12/372419848/AH/ZK/KQ/59373149/multiplex-fruits-2-1000x1000.png", 
+      category: "Nutrients", 
+      badge: "" 
+    },
+    { 
+      id: 108, 
+      name: "UPL Saaf Fungicide", 
+      price: 280, 
+      image: "https://www.agriplexindia.com/cdn/shop/products/Saaf_1.png?v=1679921658", 
+      category: "Protection", 
+      badge: "" 
+    },
+    { 
+      id: 109, 
+      name: "Kitchen Garden Kit", 
+      price: 899, 
+      image: "https://tse2.mm.bing.net/th/id/OIP.p0ZvZC0pZ7VXcca6T701eQHaFM?pid=Api&P=0&h=180", 
+      category: "Home Garden", 
+      badge: "New" 
+    },
+    { 
+      id: 110, 
+      name: "Zinc EDTA 12%", 
+      price: 420, 
+      image: "https://cpimg.tistatic.com/08516626/b/7/Zinc-Cheleted-Edta-ZN-12-.jpg", 
+      category: "Nutrients", 
+      badge: "" 
+    }
   ];
 
   const visibleProducts = showAll ? allTrendingProducts : allTrendingProducts.slice(0, 5);

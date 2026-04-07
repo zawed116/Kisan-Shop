@@ -10,8 +10,8 @@ const SmartFarming = () => {
   const smartProducts = [
     { id: 501, name: "Soil Moisture Sensor Pro", price: 1499, originalPrice: 1999, image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=400", category: "IoT", rating: 4.9 },
     { id: 502, name: "Agri-Drone for Spraying", price: 45000, originalPrice: 55000, image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=400", category: "Drones", rating: 5.0 },
-    { id: 503, name: "Automated Drip Controller", price: 3500, originalPrice: 4200, image: "https://images.unsplash.com/photo-1563514223351-bf4b7696205d?q=80&w=400", category: "Irrigation", rating: 4.7 },
-    { id: 504, name: "PH Meter Digital Pen", price: 850, originalPrice: 1200, image: "https://images.unsplash.com/photo-1576086213369-97a306dca965?q=80&w=400", category: "Testing", rating: 4.5 },
+    { id: 503, name: "Automated Drip Controller", price: 3500, originalPrice: 4200, image: "https://5.imimg.com/data5/ANDROID/Default/2024/7/432756692/PV/PN/UB/3850381/product-jpeg-500x500.jpg", category: "Irrigation", rating: 4.7 },
+    { id: 504, name: "PH Meter Digital Pen", price: 850, originalPrice: 1200, image: "https://rukminim2.flixcart.com/image/1280/1280/xif0q/soil-test-kit/v/x/o/0-soil-meter-3-in-1-digital-moisture-ph-temperature-tester-zomei-original-imahhvaf4guzhh5b.jpeg?q=90", category: "Testing", rating: 4.5 },
     { id: 505, name: "Smart Weather Station", price: 7999, originalPrice: 9500, image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=400", category: "IoT", rating: 4.8 },
   ];
 

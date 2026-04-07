@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { FaArrowRight, FaPlayCircle } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 
@@ -11,76 +13,129 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
+      subtitle: "🌱 100% Organic & Certified",
       title: "Premium Organic Seeds",
-      subtitle: "GROW THE BEST YIELD",
       description: "Non-GMO, lab-tested seeds for maximum productivity and healthy crops.",
-      img: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1600",
-      btnText: "Shop Seeds",
+      img: "/images/home1.jpg",
+      btn1Text: "Shop Seeds Now",
+      btn1Id: "seeds",
+      btn2Text: "Watch Demo",
+      btn2Id: "smart-farming"
     },
     {
       id: 2,
-      title: "Modern Farming Equipment",
-      subtitle: "SMART AGRI-TECH",
-      description: "Upgrade your farm with high-performance tractors and automated tools.",
-      img: "https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?q=80&w=1600",
-      btnText: "Explore Tools",
+      subtitle: "🚜 High Performance",
+      title: "Modern Agri Equipment",
+      description: "Upgrade your farm with our range of durable tractors and sprayers.",
+      img: "/images/home2.jpg",
+      btn1Text: "Explore Tools",
+      btn1Id: "sprayers",
+      btn2Text: "Get Quote",
+      btn2Id: "best-selling-products"
     },
     {
       id: 3,
-      title: "100% Natural Fertilizers",
-      subtitle: "SOIL HEALTH MATTERS",
-      description: "Boost your soil's nutrition with our range of organic fertilizers.",
-      img: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1600",
-      btnText: "Buy Now",
+      subtitle: "💧 Save Water, Boost Yield",
+      title: "Smart Irrigation Systems",
+      description: "Automated drip irrigation kits. Efficient water management for your fields.",
+      img: "/images/home3.jpg",
+      btn1Text: "View Systems",
+      btn1Id: "smart-farming",
+      btn2Text: "Consult Expert",
+      btn2Id: "blog-section"
     },
     {
       id: 4,
-      title: "Advanced Irrigation Systems",
-      subtitle: "SAVE WATER, SAVE CROPS",
-      description: "Smart drip irrigation kits designed for efficient water management.",
-      img: "https://images.unsplash.com/photo-1563514223351-bf4b7696205d?q=80&w=1600",
-      btnText: "View Systems",
+      subtitle: "🍓 Direct from Fields",
+      title: "Fresh Farm Harvest",
+      description: "Order fresh fruits and vegetables. Quality produce at your doorstep.",
+      img: "images/home4.jpg",
+      btn1Text: "Order Fresh",
+      btn1Id: "categories",
+      btn2Text: "Bulk Buy",
+      btn2Id: "today’s-offers"
     },
     {
       id: 5,
-      title: "Fresh Farm Harvest",
-      subtitle: "DIRECT FROM THE FIELDS",
-      description: "Get farm-fresh vegetables and fruits delivered straight to your door.",
-      img: "https://images.unsplash.com/photo-1488459711635-de8256a244b0?q=80&w=1600",
-      btnText: "Order Fresh",
+      subtitle: "🌿 Healthy Plants, More Profit",
+      title: "Natural Fertilizers",
+      description: "Boost soil health and crop nutrition with our range of organic fertilizers.",
+      img: "images/home5.jpg",
+      btn1Text: "Buy Now",
+      btn1Id: "growth-promoters",
+      btn2Text: "Application Guide",
+      btn2Id: "blog-section"
     },
     {
       id: 6,
-      title: "Eco Pest Solutions",
-      subtitle: "PROTECT YOUR FARM",
-      description: "Safe and effective organic pest control for sustainable agriculture.",
-      img: "https://images.unsplash.com/photo-1592919016383-407b5871216e?q=80&w=1600",
-      btnText: "Explore More",
+      subtitle: " Defeat Pests, Protect Crops",
+      title: "Organic Pest Solutions",
+      description: "Effective and safe organic pest control. Stop disease and increase your yield.",
+      img: "images/home6.jpg",
+      btn1Text: "Shop Solutions",
+      btn1Id: "shop-by-pest-&-disease",
+      btn2Text: "Ask Doctor",
+      btn2Id: "blog-section"
     },
     {
       id: 7,
-      title: "Greenhouse Technology",
-      subtitle: "ALL-WEATHER FARMING",
-      description: "Control your climate and grow exotic crops throughout the year.",
-      img: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?q=80&w=1600",
-      btnText: "Learn Tech",
+      subtitle: "🏠 Farming in Your Home",
+      title: "Urban Gardening Kits",
+      description: "Grow fresh herbs and vegetables in your balcony or home. Complete kits.",
+      img: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1600",
+      btn1Text: "Shop Now",
+      btn1Id: "categories",
+      btn2Text: "Garden Tips",
+      btn2Id: "blog-section"
     },
     {
       id: 8,
-      title: "Expert Agri Consultation",
-      subtitle: "FARM WITH KNOWLEDGE",
-      description: "Connect with agricultural experts to solve your farming challenges.",
-      img: "https://images.unsplash.com/photo-1595841055318-47db993e83bc?q=80&w=1600",
-      btnText: "Book Now",
+      subtitle: "📞 Expert Help, Free Support",
+      title: "Agri-Doctor Consultation",
+      description: "Connect with agricultural experts to solve your crop problems and farming challenges.",
+      img: "images/home8.jpg",
+      btn1Text: "Book Now",
+      btn1Id: "blog-section",
+      btn2Text: "Free Guide",
+      btn2Id: "seeds"
     },
+    {
+      id: 9,
+      subtitle: "☀️ Precision & Technology",
+      title: "Smart Drone Survey",
+      description: "Analyze your fields with advanced drone technology. Accurate data for smart decisions.",
+      img: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1600",
+      btn1Text: "Learn More",
+      btn1Id: "smart-farming",
+      btn2Text: "Demo Video",
+      btn2Id: "blog-section"
+    },
+    {
+      id: 10,
+      subtitle: "🔒 Safe Storage, Minimum Loss",
+      title: "Cold Storage Solutions",
+      description: "Preserve your harvest with our efficient cold storage solutions. Reduce wastage.",
+      img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1600",
+      btn1Text: "Explore",
+      btn1Id: "best-selling-products",
+      btn2Text: "Get Quote",
+      btn2Id: "blog-section"
+    }
   ];
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="w-full h-screen overflow-hidden bg-black">
+    <div className="w-full h-[600px] overflow-hidden bg-black relative">
       <Swiper
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         effect="fade"
-        fadeEffect={{ crossFade: true }} // Isse piche wali slide turant gayab ho jayegi
+        fadeEffect={{ crossFade: true }} // 1. FIXED: Added crossFade to prevent text overlap
         speed={1000}
         loop={true}
         autoplay={{
@@ -93,41 +148,48 @@ const Hero = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            {/* Important: Humne 'bg-black' aur opacity control add kiya hai 
-              taaki transition ke waqt piche wali slide na dikhe.
-            */}
+            {/* 2. FIXED: Added bg-black here so the next slide hides the previous one completely */}
             <div className="relative w-full h-full bg-black">
               {/* Background Image */}
               <img
                 src={slide.img}
                 alt={slide.title}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[5s]"
               />
 
-              {/* Gradient Overlay - Readability ke liye isko dark rakha hai */}
+              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent z-10" />
 
               {/* Content Container */}
               <div className="relative z-20 flex items-center h-full px-6 md:px-20 max-w-5xl">
                 <div className="text-white">
-                  <span className="inline-block bg-green-500 text-black text-[10px] md:text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 shadow-lg">
+                  <span className="inline-block bg-green-500/20 backdrop-blur-md text-green-400 border border-green-500/30 px-4 py-1.5 rounded-full text-xs font-bold mb-6 tracking-widest uppercase">
                     {slide.subtitle}
                   </span>
 
-                  <h1 className="text-4xl md:text-7xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                  <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
                     {slide.title}
                   </h1>
 
-                  <p className="text-gray-200 text-sm md:text-xl mb-8 max-w-xl leading-relaxed">
+                  <p className="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed font-medium">
                     {slide.description}
                   </p>
 
                   <div className="flex flex-wrap gap-4">
-                    <button className="bg-green-600 hover:bg-green-700 transition-all duration-300 px-8 py-3 rounded-lg text-white font-bold text-lg shadow-xl hover:scale-105 active:scale-95">
-                      {slide.btnText}
+                    <button
+                      onClick={() => scrollToSection(slide.btn1Id)}
+                      className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-black text-lg flex items-center gap-3 shadow-xl shadow-green-900/20 transition-all hover:scale-105 active:scale-95 group"
+                    >
+                      {slide.btn1Text}
+                      <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                     </button>
-                    <button className="backdrop-blur-md border-2 border-white/60 px-8 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 font-bold text-lg">
-                      Learn More
+
+                    <button
+                      onClick={() => scrollToSection(slide.btn2Id)}
+                      className="bg-white/10 backdrop-blur-lg border border-white/20 text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-2xl font-black text-lg transition-all flex items-center gap-3 group"
+                    >
+                      <FaPlayCircle className="text-xl group-hover:scale-110 transition-transform" />
+                      {slide.btn2Text}
                     </button>
                   </div>
                 </div>

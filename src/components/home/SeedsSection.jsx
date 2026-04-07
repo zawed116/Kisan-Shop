@@ -7,12 +7,12 @@ const SeedsSection = () => {
 
   // Real Seed Products with working High-Quality Images
   const seedProducts = [
-    { id: 301, name: "Hybrid Tomato Seeds", price: 299, originalPrice: 450, image: "https://images.unsplash.com/photo-1592841608241-94943960098a?q=80&w=400", type: "Vegetable", badge: "High Yield" },
-    { id: 302, name: "Basmati Paddy Seeds", price: 1250, originalPrice: 1500, image: "https://images.unsplash.com/photo-1536633100227-307994645318?q=80&w=400", type: "Field Crop", badge: "Popular" },
-    { id: 303, name: "Marigold Flower Seeds", price: 150, originalPrice: 200, image: "https://images.unsplash.com/photo-1599320675715-e24c29377038?q=80&w=400", type: "Flower", badge: "Easy Grow" },
-    { id: 304, name: "F1 Hybrid Chilli Seeds", price: 340, originalPrice: 420, image: "https://images.unsplash.com/photo-1595841055318-47db993e83bc?q=80&w=400", type: "Vegetable", badge: "Disease Resistant" },
+    { id: 301, name: "Hybrid Tomato Seeds", price: 299, originalPrice: 450, image: "https://organicbazar.net/cdn/shop/files/TomatoSeeds_tamatarKeBeej.jpg?v=1770811704&width=823", type: "Vegetable", badge: "High Yield" },
+    { id: 302, name: "Basmati Paddy Seeds", price: 1250, originalPrice: 1500, image: "https://5.imimg.com/data5/SELLER/Default/2026/1/576023992/FC/FB/ZO/38262764/basmati-seeds-500x500.jpg", type: "Field Crop", badge: "Popular" },
+    { id: 303, name: "Marigold Flower Seeds", price: 150, originalPrice: 200, image: "https://organicbazar.net/cdn/shop/files/MarigoldOrangeFlowerSeedsOrganicbazarFlowerSeeds.jpg?v=1754912126", type: "Flower", badge: "Easy Grow" },
+    { id: 304, name: "F1 Hybrid Chilli Seeds", price: 340, originalPrice: 420, image: "https://agriplexindia.com/cdn/shop/files/Armour-F1-Hybrid-Chilli-Seeds.png?crop=center&height=940&v=1743241709&width=940", type: "Vegetable", badge: "Disease Resistant" },
     { id: 305, name: "Sweet Corn Seeds", price: 480, originalPrice: 600, image: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?q=80&w=400", type: "Vegetable", badge: "Best Seller" },
-    { id: 306, name: "Papaya Thai Selection", price: 890, originalPrice: 1100, image: "https://images.unsplash.com/photo-1617215928447-49339e0839c1?q=80&w=400", type: "Fruit", badge: "Premium" },
+    { id: 306, name: "Papaya Thai Selection", price: 890, originalPrice: 1100, image: "https://m.media-amazon.com/images/I/61DA5yZYWSL._SY879_.jpg", type: "Fruit", badge: "Premium" },
   ];
 
   const filteredSeeds = activeTab === "All" 
